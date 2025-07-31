@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASU PHOTOGRAPHY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="boilerplate.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo">ASU PHOTOGRAPHY</a>
+   <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-image"></i>
+                        <a href="newAddImage.html">Gallery</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="NewSortcuts.html">Shortcuts</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-photo-film"></i>
+                        <a href="NewExhibits.html">Exhibits</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <a href="NewEvent.html">Events</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-store"></i>
+                        <a href="NewStore.html">Store</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="NewContact.html">Contact</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Sidebar (Mobile Only) -->
+  <div class="sidebar" id="sidebar">
+    <div>
+      <div class="close-btn" onclick="toggleSidebar()">
+        <i class="fa-solid fa-xmark"></i>
+        
+      </div>
+      <h3>AHU PHOTOGRAPHY </h3>
+       <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-image"></i>
+                        <a href="newAddImage.html">Gallery</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="NewSortcuts.html">Shortcuts</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-photo-film"></i>
+                        <a href="NewExhibits.html">Exhibits</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <a href="NewEvent.html">Events</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-store"></i>
+                        <a href="NewStore.html">Store</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="NewContact.html">Contact</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+    </div>
+    <!-- Social icons only inside sidebar -->
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h2>Capturing Moments, Creating Memories</h2>
+    <p>Welcome to my photography where every frame tells a story. From candid emotions to cinematic scenes, I bring life into still moments.</p>
+
+    <h2>About Me</h2>
+    <p>Hi, I’m Harsh Patkar, a passionate photographer based in Jabalpur. With over 10 years of experience in capturing weddings, portraits, candids, fashion, and landscapes, I believe that great photography is all about timing, light, and emotion.</p>
+
+    <h2>My Work</h2>
+    <ul>
+      <li>📸 Wedding Photography</li>
+      <li>👗 Fashion & Editorial</li>
+      <li>🌄 Landscape & Nature</li>
+      <li>🎉 Events & Celebrations</li>
+      <li>🎬 Behind the Scenes / Candid</li>
+    </ul>
+  </div>
+  <style> 
+    .content{
+      width:auto;
+      margin-top: 20%;
+    }
+  </style>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
